@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="uvm.sbet.Activities.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LinearLayoutButtomDown"
+        android:fillViewport="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/box3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Registrarse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewRegister"
+                android:layout_weight="1"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textAlignment="center" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/editTextRegisterNames"
+                android:textSize="12sp"
+                android:hint="Nombres"
+                android:textColor="?attr/colorPrimary"
+                android:layout_below="@+id/textViewRegister"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/editTextRegisterLastname"
+                android:textSize="12sp"
+                android:hint="Apellidos"
+                android:textColor="?attr/colorPrimary"
+                android:layout_below="@+id/editTextRegisterNames"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:id="@+id/editTextRegisterDate"
+                android:textSize="12sp"
+                android:hint="Fecha de Nacimiento"
+                android:textColor="?attr/colorPrimary"
+                android:layout_below="@+id/editTextRegisterLastname"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextRegisterDate"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/linearLayoutRegisterSex">
+
+                <TextView
+                    android:text="Sexo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView2"
+                    android:textSize="12sp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp" />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_alignBottom="@+id/scrollView2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <RadioButton
+                        android:text="Hombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton2"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimary" />
+
+                    <RadioButton
+                        android:text="Mujer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioButton"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        app:buttonTint="@color/colorPrimary" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/editTextRegisterCountry"
+                android:textSize="12sp"
+                android:hint="Nacionalidad"
+                android:textColor="?attr/colorPrimary"
+                android:layout_below="@+id/linearLayoutRegisterSex"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/editTextRegisterEmail"
+                android:textSize="12sp"
+                android:hint="Email"
+                android:textColor="?attr/colorPrimary"
+                android:layout_below="@+id/editTextRegisterCountry"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:id="@+id/editTextRegisterNickname"
+                android:textSize="12sp"
+                android:hint="Nombre de Usuario"
+                android:textColor="?attr/colorPrimary"
+                android:layout_below="@+id/editTextRegisterEmail"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:id="@+id/editTextRegisterPassword"
+                android:textSize="12sp"
+                android:textColor="?attr/colorPrimary"
+                android:hint="Contraseña"
+                android:layout_below="@+id/editTextRegisterNickname"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/editTextRegisterPassword"
+                android:id="@+id/linearLayoutRegisterButtons"
+                android:weightSum="1">
+
+                <Button
+                    android:text="Registrar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonRegisterRegister"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="0.51" />
+
+                <Button
+                    android:text="Limpiar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/buttonRegisterClear"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_weight="0.48" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/socialnetworks"/>
+
+</RelativeLayout>

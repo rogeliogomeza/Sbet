@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="uvm.sbet">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:logo="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Activities.RegisterActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.MainlogActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.ResultsActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.BetsActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.LivesActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Lives2Activity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.MBetsActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.NewsActivity"
+                  android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>
